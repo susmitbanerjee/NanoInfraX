@@ -1,0 +1,28 @@
+[project]
+name = "nanoinfrax"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Susmit Banerjee", email = "susmit.b1@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.5",
+    "polars>=2.1.0",
+    "pydantic>=2.14.4",
+    "pyyaml>=6.0.4",
+    "scikit-learn>=1.9.1",
+    "tokenizers>=0.23.3",
+    "torch>=2.15.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
